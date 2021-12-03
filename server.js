@@ -8,7 +8,7 @@ const app = express()
 
 app.set('etag', false)
 
-app.use('/', express.static(path.join(__dirname, 'public'), {maxAge: 1000 * 1000 * 1000, etag: false}))
+app.use('/', express.static(path.join(__dirname, 'docs'), {maxAge: 1000 * 1000 * 1000, etag: false}))
 
 http.createServer(app).listen(3000, () => console.log('Listening on 3000 for HTTP/1...'))
 

@@ -39,7 +39,7 @@ jspm_packages
 
 # Mine
 keys/
-dist/
+docs/
 server.crt
 server.csr
 server.key
